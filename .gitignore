@@ -22,13 +22,22 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.eslintcache
+*.eslintcache
 
-.ttf
-.otf
-.ttc
-.otc
-.dfont
-.eot
-.woff
-.woff2
+/font
+font/
+*.ttf
+*.otf
+*.ttc
+*.otc
+*.dfont
+*.eot
+*.woff
+*.woff2
+
+*.svg
+*.png
+*.jpg
+*.jpeg
+
+Svg.js
