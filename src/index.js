@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import MockTest from './MockTest'
-// import reportWebVitals from './reportWebVitals';
 import { Provider } from './store'
-import './css/mock/m-index.css'
+import './css/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
