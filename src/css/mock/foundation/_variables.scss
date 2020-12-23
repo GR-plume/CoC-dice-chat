@@ -1,0 +1,10 @@
+$color_base: #0D1117;
+$color_main: desaturate(lighten($color_base, 5), 5);
+$color_accent: #5a32a3;
+$color_accent2: complement($color_accent);
+
+$color_border: desaturate(lighten($color_main, 20), 20);
+$color_border_hover: desaturate(lighten($color_border, 40), 40);
+$color_border_focus: #388BFD;
+
+$color_text: #C9D1D9;

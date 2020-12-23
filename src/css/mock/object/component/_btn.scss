@@ -1,0 +1,14 @@
+.c-btn{
+    padding: .5em 1em;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .1s linear;
+    &:active{
+        transform: scale(.96);
+    }
+    &.round{
+        border-radius: 100vh;
+    }
+}

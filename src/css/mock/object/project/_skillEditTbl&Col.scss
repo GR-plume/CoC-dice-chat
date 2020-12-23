@@ -1,0 +1,137 @@
+.p-skillEditTbl{
+    margin: 10px;
+    border: solid 2px $color_border;
+    
+    & .c-textField{
+        caret-color: #fff;
+        &:hover{
+            border-color:  $color_border_hover;
+        }
+        &:focus{
+            border-width: 2px;
+            border-color: $color_border_focus;
+        }
+        &:disabled{
+            background-color: $color_base;
+            border-color:  $color_border;
+        }
+    }
+}
+
+.p-skillEditCol{
+    height: 30px;
+    height: 25px;
+    border: solid 1px $color_border;
+    background-color: $color_main;
+    color: $color_text;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+    &-even{
+        background-color: desaturate(lighten($color_main, 5), 5);
+        &:disabled{
+            background-color: $color_base;
+        }
+    }
+
+    &-name{
+        width: 220px;
+        width: 200px;
+        // width: max-content;
+        border-right-width: 1.5px;
+        padding: 0.3em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        // justify-content: center;
+    }
+    &-nameInput{
+        width: 220px;
+        width: 200px;
+        border-right-width: 1.5px;
+    }
+    &-num{
+        width: 50px;
+        width: 40px;
+        text-align: right;
+    }
+    &_detail{
+        // height: 85%;
+        height: 25px;
+        height: 20px;
+        width: 120px;
+        border: solid 1px $color_border;
+        background-color: desaturate(lighten($color_main, 15), 15);
+        color: $color_text;
+        margin-left: 2px;
+        font-size: small;
+    }
+
+    &-btnWrap{
+        width: 30px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.is-entered{
+        background-color: $color_accent;
+        color: #fff;
+        &:disabled{
+            background-color: saturate(darken($color_accent, 10), 10);
+        }
+    }
+}
+
+.p-skillRmBtn{
+    height: 80%;
+    width: 80%;
+    padding: 0.1px;
+    background-color: #86181d;
+    background-color: #ffffff00;
+    border: solid 2px #86181d;
+    border: solid 2px $color_border;
+    // font-weight: 600;
+    transition: all 0s linear;
+    fill: #86181d;
+    fill: $color_border;
+
+    & > .svg-times{
+        height: 98%;
+        width: 98%;
+        margin: auto;
+    }
+
+    &:hover{
+        border: solid 2px #86181d;
+        // background-color: #86181d;
+        & > .svg-times{
+            fill: #86181d;
+        }
+    }
+}
+
+.p-skillAddBtn{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    padding: 0.1px;
+    background-color: #ffffff00;
+    border: solid 2px $color_border;
+    border-radius: 100%;
+    transition: all 0s linear;
+    fill: $color_border;
+    & > .svg-plus{
+        height: 95%;
+        width: 95%;
+        margin: auto;
+    }
+    &:hover{
+        border: solid 2px #044289;
+        & > .svg-plus{
+            fill: #044289;
+        }
+    }
+}

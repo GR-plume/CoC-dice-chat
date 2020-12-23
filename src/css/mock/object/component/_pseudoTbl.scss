@@ -1,0 +1,8 @@
+// divでHTMLのtableを擬似的に作る
+.c-pseudoTbl{
+    width: max-content;
+
+    &_row{
+        display: flex;
+    }
+}

@@ -1,0 +1,19 @@
+// input type: text, number
+.c-textField{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-style: solid;
+    padding: 0em .3em;
+
+    &-soft{
+        border-radius: 6px;
+    }
+
+    &-borderless{
+        border: none;
+    }
+}
+
+
+
