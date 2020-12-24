@@ -9,8 +9,10 @@ const SPview = () => {
 
     return (
         <>
+        <div style={{position: "sticky", top: "0px", width: "max-content",height: "max-content", border: "solid 2px #fff"}}>
             <div>{state.chara.sp.used.occ} / {state.chara.sp.max.occ}</div>
             <div>{state.chara.sp.used.inte} / {state.chara.sp.max.inte}</div>
+        </div>
         </>
     )
 }
@@ -127,11 +129,13 @@ const SkillEdit = () => {
 
     return (
         <>
-        <SPview />
-        <div style={{border: "solid 1px"}}>
+        {/* <div style={{border: "solid 1px"}}>
         {ChosenPreset}
         {ChosenOriginal}
-        </div>
+        </div> */}
+        <div style={{display: "flex", height: "max-content"}}>
+        <div style={{display: "block", width: "max-content"}}>
+
         <div className="p-skillEditTbl c-pseudoTbl">
             <div className="c-pseudoTbl_row">
                 <div className="p-skillEditCol p-skillEditCol-name p-skillEditCol-name-head">技能名</div>
@@ -160,6 +164,10 @@ const SkillEdit = () => {
             <div className="p-skillEditCol p-skillEditCol-btnWrap p-skillEditCol-btnWrap-head"></div>
         </div>
            {OriginalSkills}
+        </div>
+
+        </div>
+        <SPview />
         </div>
         </>
     )
