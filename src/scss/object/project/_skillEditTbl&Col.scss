@@ -89,11 +89,8 @@
     height: 80%;
     width: 80%;
     padding: 0.1px;
-    background-color: #86181d;
     background-color: #ffffff00;
-    border: solid 2px #86181d;
     border: solid 2px $color_border;
-    // font-weight: 600;
     transition: all 0s linear;
     fill: #86181d;
     fill: $color_border;
@@ -106,32 +103,50 @@
 
     &:hover{
         border: solid 2px #86181d;
-        // background-color: #86181d;
         & > .svg-times{
             fill: #86181d;
         }
     }
 }
 
-.p-skillAddBtn{
-    height: 20px;
-    width: 20px;
+.p-skillAdd{
     margin-left: 10px;
-    padding: 0.1px;
-    background-color: #ffffff00;
-    border: solid 2px $color_border;
-    border-radius: 100%;
-    transition: all 0s linear;
-    fill: $color_border;
-    & > .svg-plus{
-        height: 95%;
-        width: 95%;
-        margin: auto;
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    &_btn{
+        transition: all 0s linear;
+        height: 25px;
+        width: 25px;
+        padding: 0.1px;
+        border-radius: 100%;
+        border: solid 2px $color_border;
+        background-color: #ffffff00;
+        fill: $color_border;
+        & > .svg-plus{
+            height: 95%;
+            width: 95%;
+            margin: auto;
+        }
+    }
+    &_text{
+        margin-left: 4px;
+        padding: 0;
+        color: $color_border;
+        cursor: pointer;
+        font-size: 16px;
+        user-select: none;
     }
     &:hover{
-        border: solid 2px #044289;
-        & > .svg-plus{
-            fill: #044289;
+        & > .p-skillAdd_btn{
+            border: solid 2px #044289;
+            & > .svg-plus{
+                fill: #044289;
+            }
+        }
+        & > .p-skillAdd_text{
+            color: #044289;
         }
     }
 }

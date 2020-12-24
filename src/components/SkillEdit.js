@@ -71,11 +71,11 @@ const SkillRow = props => {
                 <div className={className_name}>{props.item.name}{detail}</div> :
                 <input type="text" className={className_nameInput} value={props.item.name} onChange={e => handleChange(e, 'name')} placeholder="技能名" />
             }
-            <input type="text" className={className_num} value={props.item.init} onChange={e => handleChange(e, 'init')} disabled={props.cat === "Pre"} placeholder={props.cate === 'Pre' ? '' : '0'} />
-            <input type="text" className={className_num} value={props.item.occ}  onChange={e => handleChange(e, 'occ')} />
-            <input type="text" className={className_num} value={props.item.inte} onChange={e => handleChange(e, 'inte')} />
-            <input type="text" className={className_num} value={props.item.adj}  onChange={e => handleChange(e, 'adj')} />
-            <input type="text" className={className_num} value={props.item.sum} disabled />
+            <input type="number" className={className_num} value={props.item.init} onChange={e => handleChange(e, 'init')} disabled={props.cat === "Pre"} placeholder={props.cate === 'Pre' ? '' : '0'} />
+            <input type="number" className={className_num} value={props.item.occ}  onChange={e => handleChange(e, 'occ')} />
+            <input type="number" className={className_num} value={props.item.inte} onChange={e => handleChange(e, 'inte')} />
+            <input type="number" className={className_num} value={props.item.adj}  onChange={e => handleChange(e, 'adj')} />
+            <input type="number" className={className_num} value={props.item.sum} disabled />
             {props.cat === "Orig" &&
                 <div className={`p-skillEditCol p-skillEditCol-btnWrap ${EvenOdd}`}>
                     <button className="c-btn p-skillRmBtn" onClick={() => dispatch({type: 'rmOrigSkill', id: props.item.id})}>
@@ -118,6 +118,13 @@ const SkillEdit = () => {
         e => (<ChosenSkill key={e.id} item={e} />)
     )
 
+    const OrigSkillExist = (() => {
+        if(state.interimSkills.length < 1){
+            return {display: "none"}
+        }
+        return {}
+    })()
+
     return (
         <>
         <SPview />
@@ -128,12 +135,13 @@ const SkillEdit = () => {
         <div className="p-skillEditTbl c-pseudoTbl">
            {PresetSkills}
         </div>
-        <span style={{display: "flex", alignItems: "center"}}>
-        <button className="p-skillAddBtn c-btn" onClick={() => dispatch({type: 'addOrigSkill'})}>
-            <SvgPlus />
-        </button>
-        追加する</span>
-        <div className="p-skillEditTbl c-pseudoTbl">
+        <label className="p-skillAdd">
+            <button className="p-skillAdd_btn c-btn" onClick={() => dispatch({type: 'addOrigSkill'})}>
+                <SvgPlus />
+            </button>
+            <span className="p-skillAdd_text">追加する</span>
+        </label>
+        <div className="p-skillEditTbl c-pseudoTbl" style={OrigSkillExist}>
            {OriginalSkills}
         </div>
         </>
