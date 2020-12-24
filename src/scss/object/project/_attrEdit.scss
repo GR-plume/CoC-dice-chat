@@ -1,0 +1,28 @@
+.p-attrEditCol{
+    @extend .p-skillEditCol;
+    height: 30px;
+    &-even{
+        @extend .p-skillEditCol-even;
+        &:disabled{
+            background-color: $color_base;
+        }
+    }
+
+    &-name{
+        @extend .p-skillEditCol-name;
+        width: 70px;
+        justify-content: center;
+    }
+    &-num{
+        @extend .p-skillEditCol-num;
+    }
+
+    &-btnWrap{
+        @extend .p-skillEditCol-btnWrap;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

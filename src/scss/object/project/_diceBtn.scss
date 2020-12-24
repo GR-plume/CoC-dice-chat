@@ -1,0 +1,23 @@
+.p-diceBtn{
+    background-color: #ffffff00;
+    border: solid 2px $color_accent;
+    padding: 0;
+    height: 95%;
+    width: 95%;
+    border-radius: 100%;
+    fill: #fff;
+    &:hover{
+        // -webkit-animation: rotate(360deg) .15s linear;
+        // animation: rotate(360deg) .15s linear;
+        // transform: rotate(360deg);
+        fill: $color_accent;
+    }
+    &:active{
+        transition: .1ms;
+        transform: scale(.92);
+    }
+    & > .svg-dice{
+        width: 80%;
+        height: 80%;
+    }
+}
