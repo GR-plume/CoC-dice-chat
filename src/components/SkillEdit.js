@@ -1,7 +1,7 @@
 import { Store } from '../store'
 import { useContext } from 'react'
 import toNum from '../toNum'
-import { SvgTimes, SvgPlus } from '../Svg'
+import { SvgTimes, SvgPlus } from '../svg'
 import '../css/index.css'
 
 const SPview = () => {
@@ -133,6 +133,14 @@ const SkillEdit = () => {
         {ChosenOriginal}
         </div>
         <div className="p-skillEditTbl c-pseudoTbl">
+            <div className="c-pseudoTbl_row">
+                <div className="p-skillEditCol p-skillEditCol-name p-skillEditCol-name-head">技能名</div>
+                <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">初期</div>
+                <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">職業</div>
+                <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">興味</div>
+                <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">調整</div>
+                <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">合計</div>
+            </div>
            {PresetSkills}
         </div>
         <label className="p-skillAdd">
@@ -142,6 +150,15 @@ const SkillEdit = () => {
             <span className="p-skillAdd_text">追加する</span>
         </label>
         <div className="p-skillEditTbl c-pseudoTbl" style={OrigSkillExist}>
+        <div className="c-pseudoTbl_row">
+            <div className="p-skillEditCol p-skillEditCol-name p-skillEditCol-name-head">技能名</div>
+            <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">初期</div>
+            <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">職業</div>
+            <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">興味</div>
+            <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">調整</div>
+            <div className="p-skillEditCol p-skillEditCol-num p-skillEditCol-num-head">合計</div>
+            <div className="p-skillEditCol p-skillEditCol-btnWrap p-skillEditCol-btnWrap-head"></div>
+        </div>
            {OriginalSkills}
         </div>
         </>

@@ -12,9 +12,23 @@
         @extend .p-skillEditCol-name;
         width: 70px;
         justify-content: center;
+        &-head{
+            background-color: $color_base;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom-width: 2px;
+        }
     }
     &-num{
         @extend .p-skillEditCol-num;
+        &-head{
+            background-color: $color_base;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom-width: 2px;
+        }
     }
 
     &-btnWrap{
@@ -23,6 +37,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &-head{
+            background-color: $color_base;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom-width: 2px;
+        }
     }
 
 }

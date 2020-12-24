@@ -86,9 +86,23 @@ const AttrEdit = () => {
         <>
         <div className="c-pseudoTbl">
         <div className="c-pseudoTbl_row">
-            <DiceAll item={state.chara} />
-            <div className="p-skillEditTbl c-pseudoTbl">{primary}</div>
             <div className="p-skillEditTbl c-pseudoTbl">
+                <div className="c-pseudoTbl_row">
+                    <div className="p-attrEditCol p-attrEditCol-btnWrap p-attrEditCol-btnWrap-head"><DiceAll item={state.chara} /></div>
+                    <div className="p-attrEditCol p-attrEditCol-name p-attrEditCol-name-head">能力値</div>
+                    <div className="p-attrEditCol p-attrEditCol-num p-attrEditCol-num-head">基本</div>
+                    <div className="p-attrEditCol p-attrEditCol-num p-attrEditCol-num-head">調整</div>
+                    <div className="p-attrEditCol p-attrEditCol-num p-attrEditCol-num-head">合計</div>
+                </div>
+                {primary}
+            </div>
+            <div className="p-skillEditTbl c-pseudoTbl">
+                <div className="c-pseudoTbl_row">
+                    <div className="p-attrEditCol p-attrEditCol-name p-attrEditCol-name-head">能力値</div>
+                    <div className="p-attrEditCol p-attrEditCol-num p-attrEditCol-num-head">基本</div>
+                    <div className="p-attrEditCol p-attrEditCol-num p-attrEditCol-num-head">調整</div>
+                    <div className="p-attrEditCol p-attrEditCol-num p-attrEditCol-num-head">合計</div>
+                </div>
                 {secondary}
                 <div className="c-pseudoTbl_row">
                     <div className="p-attrEditCol p-attrEditCol-name p-attrEditCol-even">db</div>

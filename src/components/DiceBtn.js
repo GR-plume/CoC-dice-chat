@@ -1,6 +1,6 @@
 import { Store } from '../store'
 import { useContext } from 'react'
-import {SvgDice} from '../Svg'
+import {SvgDice} from '../svg'
 
 const dice = (roll, max, add = 0) => {
     return [...Array(roll)].map(() => Math.floor(Math.random() * max + 1)).reduce((s, e) => s + e) + add
@@ -81,7 +81,7 @@ const DiceAll = props => {
 
     return (
         <>
-            <button onClick={handleClick}>All</button>
+            <button style={{borderRadius: "6px"}} className="c-btn p-diceBtn" onClick={handleClick}>ALL</button>
         </>
     )
 }

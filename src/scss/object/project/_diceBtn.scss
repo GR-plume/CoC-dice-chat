@@ -6,11 +6,13 @@
     width: 95%;
     border-radius: 100%;
     fill: #fff;
+    color: #fff;
     &:hover{
         // -webkit-animation: rotate(360deg) .15s linear;
         // animation: rotate(360deg) .15s linear;
         // transform: rotate(360deg);
         fill: $color_accent;
+        color: $color_accent;
     }
     &:active{
         transition: .1ms;

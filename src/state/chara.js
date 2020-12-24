@@ -16,7 +16,7 @@ const attributes = {
     know: {label: '知識',     orig: 0, adj: '', temp: '', sum: 0},
     // 
     db: '-1d6',
-    sanP: null,
+    sanP: '-',
     tempHP: 0,
     tempMP: 0
 }
