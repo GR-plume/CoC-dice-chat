@@ -10,7 +10,9 @@ const SPview = () => {
     return (
         <>
         <div style={{position: "sticky", top: "0px", width: "max-content",height: "max-content", border: "solid 2px #fff"}}>
+            <div>職業</div>
             <div>{state.chara.sp.used.occ} / {state.chara.sp.max.occ}</div>
+            <div>興味</div>
             <div>{state.chara.sp.used.inte} / {state.chara.sp.max.inte}</div>
         </div>
         </>
@@ -168,6 +170,8 @@ const SkillEdit = () => {
 
         </div>
         <SPview />
+        {ChosenPreset}
+        {ChosenOriginal}
         </div>
         </>
     )
