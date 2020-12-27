@@ -1,0 +1,33 @@
+.p-spviewTbl{
+    @extend .p-skillEditTbl;
+    display: flex;
+    height: max-content;
+    &.is-sticky{
+        position: sticky;
+        top: 0;
+    }
+}
+
+.p-spviewCol{
+    @extend .p-skillEditCol;
+    height: max-content;
+    flex-direction: column;
+    width: 50px;
+    &_head{
+        width: 100%;
+        background-color: $color_base;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: $color_border;
+        border-bottom-width: 2px;
+    }
+    &_point{
+        width: 100%;
+        padding: .3em;
+        background-color: $color_main;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

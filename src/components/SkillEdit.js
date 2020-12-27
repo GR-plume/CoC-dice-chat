@@ -9,11 +9,15 @@ const SPview = () => {
 
     return (
         <>
-        <div style={{position: "sticky", top: "0px", width: "max-content",height: "max-content", border: "solid 2px #fff"}}>
-            <div>職業</div>
-            <div>{state.chara.sp.used.occ} / {state.chara.sp.max.occ}</div>
-            <div>興味</div>
-            <div>{state.chara.sp.used.inte} / {state.chara.sp.max.inte}</div>
+        <div className="p-spviewTbl is-sticky">
+            <div className="p-spviewCol">
+                <div className="p-spviewCol_head">職業</div>
+                <div className="p-spviewCol_point">{state.chara.sp.used.occ} / {state.chara.sp.max.occ}</div>
+            </div>
+            <div className="p-spviewCol">
+                <div className="p-spviewCol_head">興味</div>
+                <div className="p-spviewCol_point">{state.chara.sp.used.inte} / {state.chara.sp.max.inte}</div>
+            </div>
         </div>
         </>
     )
