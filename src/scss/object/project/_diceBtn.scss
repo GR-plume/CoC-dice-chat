@@ -1,3 +1,8 @@
+// @keyframes spin {
+//     0% {transform: rotate(0deg);}
+//     100% {transform: rotate(360deg);}
+// }
+
 .p-diceBtn{
     background-color: #ffffff00;
     border: solid 2px $color_accent;
@@ -17,6 +22,8 @@
     &:active{
         transition: .1ms;
         transform: scale(.92);
+        // -webkit-animation: spin .15s linear;
+        // animation: spin .15s linear;
     }
     & > .svg-dice{
         width: 80%;
