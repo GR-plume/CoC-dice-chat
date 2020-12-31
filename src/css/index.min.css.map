@@ -8,13 +8,13 @@
         "../scss/foundation/_variables.scss",
         "../scss/foundation/_font.scss",
         "../scss/foundation/_base.scss",
-        "../scss/object/component/_btn.scss",
-        "../scss/object/component/_pseudoTbl.scss",
-        "../scss/object/component/_textField.scss",
-        "../scss/object/project/_skillEditTbl&Col.scss",
-        "../scss/object/project/_attrEdit.scss",
-        "../scss/object/project/_diceBtn.scss",
-        "../scss/object/project/_spview.scss"
+        "../scss/component/_btn.scss",
+        "../scss/component/_pseudoTbl.scss",
+        "../scss/component/_textField.scss",
+        "../scss/project/_skillEditTbl&Col.scss",
+        "../scss/project/_attrEdit.scss",
+        "../scss/project/_diceBtn.scss",
+        "../scss/project/_spview.scss"
     ],
     "names": [],
     "file": "index.min.css"
